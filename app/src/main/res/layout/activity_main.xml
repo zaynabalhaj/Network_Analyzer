@@ -1,0 +1,183 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view" />
+    <!-- Start Date and Time Section -->
+    <LinearLayout
+        android:id="@+id/startDateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_centerVertical="true">
+
+        <!-- Start Date -->
+        <TextView
+            android:id="@+id/textViewStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Date:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/startDateEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Start Date"
+            android:inputType="date"
+            android:textSize="13sp"
+            android:textColor="@color/black"/>
+
+        <!-- Start Time -->
+        <TextView
+            android:id="@+id/textViewStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Time (HH:MM):"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/startHourEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Hour"
+            android:textSize="13sp"
+            android:inputType="number"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/startColonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <!-- End Date and Time Section -->
+
+    <ImageView
+        android:id="@+id/myIcon"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="125dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_wifi" />
+
+    <LinearLayout
+        android:id="@+id/endDateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/startDateLayout"
+        android:layout_marginTop="16dp"
+        android:layout_centerVertical="true">
+
+        <!-- End Date -->
+        <TextView
+            android:id="@+id/textViewEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Date:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/endDateEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="End Date"
+            android:inputType="date"
+            android:textSize="13sp"
+            android:textColor="@color/black"/>
+
+        <!-- End Time -->
+        <TextView
+            android:id="@+id/textViewEndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Time (HH:MM):"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/endHourEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Hour"
+            android:textSize="13sp"
+            android:inputType="number"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/endColonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <!-- Send Request Button -->
+    <TextView
+        android:id="@+id/text"
+
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="265dp"
+        android:text="              Please Specify the Time:"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSendRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/endDateLayout"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="39dp"
+
+        android:padding="1dp"
+        android:text="Submit"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:drawableLeft="@drawable/ic_back"
+        android:textStyle="bold"
+        android:background="@color/purple"
+        android:backgroundTint="@null"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp" />
+
+
+</RelativeLayout>

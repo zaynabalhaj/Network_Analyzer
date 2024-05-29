@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statistics"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_margin="40dp"
+        android:layout_below="@id/textStatistics">
+
+        <!-- Table Heading -->
+
+        <TableRow
+            android:background="@color/purple">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/col1"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:padding="10sp"
+                android:textSize="13sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Connectivity"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:padding="10sp"
+                android:textSize="13sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Signal power"
+                android:textColor="@android:color/white"
+                android:padding="10sp"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="SNR"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:padding="10sp"
+                android:textSize="13sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                />
+
+
+        </TableRow>
+
+        <!-- Table Data -->
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="2G"
+                android:textStyle="bold"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/g2conn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/g2sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/snr2g"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="SNR"
+                android:textStyle="bold"
+
+                android:padding="10sp"
+                android:textSize="14sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="3G"
+                android:padding="10sp"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/g3conn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/g3sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/snr3g"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="SNR"
+                android:textStyle="bold"
+
+                android:padding="10sp"
+                android:textSize="14sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="4G"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/g4conn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/g4sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                />
+            <TextView
+                android:id="@+id/snr4g"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="SNR"
+                android:textStyle="bold"
+
+                android:padding="10sp"
+                android:textSize="14sp"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_margin="40dp"
+        android:layout_below="@id/tableLayout">
+
+        <!-- First Row -->
+        <TableRow android:background="@color/purple">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Operator"
+                android:textStyle="bold"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Connectivity (%)"
+                android:padding="10sp"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                />
+        </TableRow>
+
+        <!-- Second Row -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Touch"
+                android:textStyle="bold"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/touchconn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                />
+        </TableRow>
+
+        <!-- Third Row -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Alfa"
+                android:padding="10sp"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/alfaconn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/deviceSignalPowerTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_margin="40dp"
+        android:layout_below="@id/tableLayout2">
+
+
+        <TableRow
+            android:id="@+id/table_row"
+            android:background="@color/purple">
+            <TextView
+                android:id="@+id/device_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Device name"
+                android:textColor="@android:color/white"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Signal power"
+                android:textColor="@android:color/white"
+                android:padding="10sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                />
+        </TableRow>
+
+    </TableLayout>
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:drawableLeft="@drawable/ic_back"
+        android:textStyle="bold"
+        android:background="@color/purple"
+        android:backgroundTint="@null"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="20dp"
+        android:onClick="returnToMainXML" />
+
+
+
+
+</RelativeLayout>

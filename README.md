@@ -1,11 +1,11 @@
-Network Cell Analyzer
-Introduction
+***Network Cell Analyzer***
+**Introduction**
 The "Network Cell Analyzer" is an Android application designed to analyze cell-specific data received from the serving base station of the cellular network to which your Android device is connected. It provides insights into the history of network operators, cellular network types, and offers statistics on the experienced link quality and measurements in a distributed manner.
 
-Proposed System
+**Proposed System**
 The project aims to utilize smartphone APIs to collect network measurements in various generations of mobile networks. The Android application collects cell information from the actively connected base station, supporting GSM/GPRS/EDGE (2G/2.5G), UMTS (3G), and LTE (4G) networks. Through Android APIs, the device acquires cell-related information and regularly sends this data to a server.
 
-Key Features
+**Key Features**
 Collects cell information from the actively connected base station.
 Supports GSM/GPRS/EDGE (2G/2.5G), UMTS (3G), and LTE (4G) networks.
 Regularly sends cell information to the server with a timestamp.
